@@ -1,3 +1,32 @@
+* {
+    color: #fff;
+    background-color: black;
+}
+
+$paragraph: Verdana, Geneva, Tahoma, sans-serif;
+$neon: 'Neonderthaw', cursive;
+
+@mixin paragraph {
+    font-family: $paragraph;
+    font-size: 25px;
+}
+
+@mixin title {
+    font-family: $neon;
+    font-size: 50px;
+}
+
+@mixin neon {
+    text-shadow:
+    0 0 8px #fff,
+    0 0 16px #fff,
+    0 0 24px #fff,
+    0 0 32px #00eb01,
+    0 0 64px #00eb01,
+    0 0 128px #00eb01,
+    0 0 256px #00eb01,
+}
+
 #main {
     display: grid;
     height: 100vh;
@@ -6,15 +35,44 @@
 
 .landing {
     display: flex;
+    height: 1000px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     &__header {
-        color: red;
+        font-family: $neon;
+        font-size: 100px;
+        
+        @include neon;
     }
     
     &__script {
-        color: green;
+        margin-top: 150px;
+        font-family: $neon;
+        font-size: 50px;
+
+        @include neon;
     }
 }
+
+.about {
+    display: flex;
+    height: 1000px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__heading {
+        font-family: $neon;
+        font-size: 50px;
+        
+        @include neon;
+    }
+    
+    &__script {
+        margin-top: 50px;
+        @include paragraph;        
+    }
+}
+
