@@ -12,7 +12,7 @@ This is a great place to apply what you have been learning on the course. Push o
 ### Requirements
 You need to have it as a public repository on GitHub In the repo you will also need a `README.md` with a short intro to the project. You are to use `SCSS for styling`. You are to use `B.E.M` as a naming convention. `Responsiveness` is vital – use Grid, Flex, whatever you wish but the site must look good at all screen widths. VERY CRITICAL! : You will need to make sure that your website looks good on phones, tablets and laptops (we will see Media Queries next week, docs to follow)
 ### MVP:
-Your Portfolio should have the following section:
+Your Portfolio should have the following sections:
 - A landing page/section with your name and title on it. 
 - An About page/section with a little bit about you 
 - A Tech stacks/skills page/section with all the techs you have learned during the course 
