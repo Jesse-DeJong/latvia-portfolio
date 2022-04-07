@@ -1,5 +1,7 @@
+$ink: #453826;
+
 * {
-    color: #453826;
+    color: $ink;
     // background-color: #262626;
 }
 
@@ -37,14 +39,32 @@ $title: 'Monsieur La Doulaise', cursive;
     align-items: center;
 
     &__header {
-        font-family: $type;
+        font-family: $title;
         font-size: 100px;
+    }
+
+    /* Div */
+    &__dateBar {
+        width: 100%;
+        border-top: 4px double $ink;
+        border-bottom: 4px double $ink;
     }
     
     &__script {
         margin-top: 150px;
         font-family: $type;
         font-size: 50px;
+    }
+}
+
+/* UL */
+.dateBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 30px;
+    
+    &__issue {
+        font-family: $type;
     }
 }
 
